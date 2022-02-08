@@ -33,17 +33,21 @@ The data and code in this repository are also available as an
 (see [the package website](https://kosukeimai.github.io/qss-package/)). The code is in 
 the form of vignettes. To install this package, use the following command:
 
+```R
     install.packages("devtools") # if you have not installed devtools package already
     devtools::install_github("kosukeimai/qss-package", build_vignettes = TRUE)
-    
+```
+
 Once the `qss` package is installed, you can use the data and vignette:
 
+```R
     library(qss)
     data(package = "qss") # list all data sets
     data(elections) # load the elections data
     vignette(package = "qss") # list all vignettes
     browseVignette("qss") # list vignettes and R code
     vignette("causality", package = "qss") # show the vignette for the Causality chapter
+```
 
 ## Related repositories
 
